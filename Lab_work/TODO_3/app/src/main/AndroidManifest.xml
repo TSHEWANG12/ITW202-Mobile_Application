@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TODO_3">
         <activity android:name=".MainActivity2"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity"
+            android:label="@string/secondname"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
