@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/Open_website"
+        android:layout_width="297dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="https://developer.android.com"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <Button
+        android:id="@+id/websitebtn"
+        android:layout_width="273dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="528dp"
+        android:text="Open website"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Open_website"
+        app:layout_constraintVertical_bias="0.452" />
+
+    <EditText
+        android:id="@+id/Open_location"
+        android:layout_width="310dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="480dp"
+        android:ems="10"
+        android:hint="Golden Gate Bridge"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/websitebtn"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/locationbtn"
+        android:layout_width="270dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="388dp"
+        android:text="Open location"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Open_location"
+        app:layout_constraintVertical_bias="0.853" />
+
+    <EditText
+        android:id="@+id/Share_text"
+        android:layout_width="303dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="288dp"
+        android:ems="10"
+        android:hint="'T was brilling and slithy toves"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationbtn"
+        app:layout_constraintVertical_bias="0.684" />
+
+    <Button
+        android:id="@+id/sharebtn"
+        android:layout_width="258dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="212dp"
+        android:onClick="Share"
+        android:text="Share text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.404"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Share_text"
+        app:layout_constraintVertical_bias="0.714" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
