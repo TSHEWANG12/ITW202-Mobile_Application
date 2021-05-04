@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TOD0_12</string>
+    <string name="donut_order_message">You ordered a donut.</string>
+    <string name="ice_cream_order_message">You ordered an ice cream sandwich.</string>
+    <string name="froyo_order_message">You ordered a FroYo.</string>
+    <string-array name="item_list">
+        <item> Home</item>
+        <item> Work</item>
+        <item> Mobile</item>
+        <item> Other</item>
+    </string-array>
+</resources>
