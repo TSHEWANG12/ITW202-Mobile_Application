@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        android:theme="@style/Theme.TODO_12.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="411dp"
+        android:layout_height="38dp"
+        android:text="MENU FOR THE DAY."
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/i1"
+        android:layout_width="95dp"
+        android:layout_height="83dp"
+        android:layout_below="@+id/tv1"
+        android:layout_marginTop="21dp"
+        android:onClick="donut"
+        android:src="@drawable/donut"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="56dp" />
+
+    <ImageView
+       android:id="@+id/i2"
+       android:layout_width="95dp"
+       android:layout_height="83dp"
+       tools:layout_editor_absoluteX="18dp"
+       tools:layout_editor_absoluteY="186dp"
+       android:onClick="kitkat"
+       android:src="@drawable/kitkat"
+       android:layout_below="@+id/i1"
+       android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/i3"
+        android:layout_width="95dp"
+        android:layout_height="74dp"
+        android:layout_below="@+id/i2"
+        android:layout_marginTop="2dp"
+        android:onClick="cake"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="317dp"
+        android:src="@drawable/cake" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/i1"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="67dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/tv1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="110dp"/>
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/i2"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="195dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/i1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="110dp"/>
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/i3"
+        tools:layout_editor_absoluteX="130dp"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteY="325dp"
+        android:layout_below="@+id/i2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="110dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/i4"
+        android:layout_width="113dp"
+        android:layout_height="87dp"
+        android:onClick="next"
+        android:layout_below="@+id/tv4"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/i44" />
+
+</RelativeLayout>
